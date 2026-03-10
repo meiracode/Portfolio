@@ -161,31 +161,31 @@ p {
   margin-top: 25px;
   font-weight: 800;
   display: flex;
-  flex-wrap: nowrap;
   gap: 10px;
 }
 
+
 .hero-section .text .links a {
-  display: inline-block;
+  display: inline-flex;
   padding: 6px 12px;
   border: 3px solid var(--link-color);
   border-radius: 8px;
   margin-bottom: 10px;
   transition: all .25s ease, color 0.3s ease;
   flex-shrink: 0;
+  gap: 10px;
 }
 
 .hero-section .text .links a:hover {
   color: rgb(224, 153, 211);
   border-color: rgb(225, 154, 212);
-  font-size: 16.5px;
 }
 
 .hero-section .text .links a:nth-child(1){ animation-delay: 360ms; }
 .hero-section .text .links a:nth-child(2){ animation-delay: 440ms; }
 .hero-section .text .links a:nth-child(3){ animation-delay: 520ms; }
 
-/*RESPONSIVE media*/
+/*media*/
 @media (max-width: 900px) {
   nav {
     padding: 0 20px;
@@ -202,7 +202,9 @@ p {
   }
 
   .hero-section .links {
-    font-size: smaller;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
   }
 
   .hero-section .headshot {
@@ -534,7 +536,7 @@ z-index: 10;
 }
 
 .link {
-    display: inline-block;
+    display: inline-flex;
     margin-top: 40px;
     font-size: 18px;
     font-weight: 700;
@@ -583,10 +585,6 @@ z-index: 10;
   transition: transform 0.4s ease;
 }
 
-.project-img:hover img {
-  transform: scale(1.03);
-}
-
 .project-info {
   flex: 1;
   display: flex;
@@ -601,6 +599,12 @@ z-index: 10;
 }
 
 .project-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(88, 74, 106, 0.75);
+}
+
+.project-list {
   font-size: 15px;
   line-height: 1.6;
   color: rgba(88, 74, 106, 0.75);
