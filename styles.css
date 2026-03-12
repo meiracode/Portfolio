@@ -84,8 +84,8 @@ nav {
 }
 
 nav .left a {
-  font-size: 25px;
-  font-weight: 350;
+  font-size: 20px;
+  font-weight: 450;
   color:#ffffff;
 }
 
@@ -565,7 +565,6 @@ z-index: 10;
   gap: 50px;
 }
 
-/* flips the order for alternating layout */
 .project-row.reverse {
   flex-direction: row-reverse;
 }
@@ -650,7 +649,6 @@ z-index: 10;
   color: #fff;
 }
 
-/* outlined ghost button for GitHub */
 .project-btn.ghost {
   background: transparent;
   border: 2px solid var(--link-color);
