@@ -107,9 +107,10 @@ nav .right a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  margin: 100px 50px 120px;
+  padding: 100px 50px 120px;
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero-section .headshot {
@@ -128,7 +129,7 @@ nav .right a:hover {
 
 .hero-section .text {
   flex: 5;
-  min-width: 400px;
+  min-width: 0;
   animation: fadeUp 650ms ease both;
   animation-delay: 240ms;
 }
@@ -198,7 +199,7 @@ p {
   .hero-section {
     flex-direction: column;
     gap: 30px;
-    margin: 80px 20px;
+    padding: 80px 20px;
   }
 
   .hero-section .links {
